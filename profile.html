@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Профиль | MetroDrop</title>
+	<meta name="view-transition" content="same-origin">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preload" href="Шрифт/Colossus%20Expanded%20RUS/ColossusExpandedRUS.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" as="image" href="img/backround.png">
+	<link rel="preload" as="image" href="img/head_backround.png">
+	<link rel="preload" as="image" href="img/menu_backround.png">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="background-overlay" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<a class="brand" href="home.html" aria-label="MetroDrop - главная">
+			<img class="brand-logo" src="img/logo.png" alt="MetroDrop">
+		</a>
+
+		<nav class="main-nav" id="main-menu" aria-label="Основная навигация">
+			<a class="nav-link" href="home.html#login">АВТОРИЗАЦИЯ</a>
+			<a class="nav-link" href="home.html#cases">КЕЙСЫ</a>
+			<a class="nav-link" href="home.html#market">РЫНОК</a>
+
+			<div class="mobile-menu-panel" aria-label="Меню пользователя">
+				<a class="mobile-menu-item" href="home.html#login">АВТОРИЗАЦИЯ</a>
+				<a class="mobile-menu-item" href="home.html#cases">КЕЙСЫ</a>
+				<a class="mobile-menu-item" href="home.html#workbench">ВЕРСТАК</a>
+				<a class="mobile-menu-item" href="home.html#upgrade">АПГРЕЙД</a>
+				<a class="mobile-menu-item" href="home.html#contract">КОНТРАКТ</a>
+				<a class="mobile-menu-item gold-menu-item" href="home.html#events">СОБЫТИЯ</a>
+				<img class="mobile-menu-decoration" src="img/img_menu.png" alt="" aria-hidden="true">
+			</div>
+		</nav>
+
+		<div class="header-actions">
+			<span class="balance">0 <img class="balance-currency" src="img/metro_money.jpg" alt="Рубли"></span>
+			<a class="login-button" href="home.html#login">ВОЙТИ</a>
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+				<span class="menu-icon" aria-hidden="true">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+		</div>
+	</header>
+
+	<main class="profile-page">
+		<section class="profile-card" aria-label="Данные профиля">
+			<div class="profile-avatar-wrap">
+				<img class="profile-avatar" src="img/logo.png" alt="Аватар пользователя">
+			</div>
+			<div class="profile-details">
+				<div class="profile-field">
+					<strong class="profile-name" data-profile="name">ИГРОК</strong>
+				</div>
+				<div class="profile-field">
+					<button class="profile-id" type="button" data-copy-id aria-label="Скопировать ID">
+						<strong data-profile="id">000000</strong>
+					</button>
+					<span class="copy-message" role="status" aria-live="polite"></span>
+				</div>
+				<div class="profile-field">
+					<strong class="profile-balance" data-profile="balance">0 <img src="img/metro_money.jpg" alt="Рубли"></strong>
+				</div>
+			</div>
+		</section>
+
+		<section class="profile-stats" aria-label="Статистика игрока">
+			<div class="profile-stat">
+				<span>ОБЩАЯ ПРИБЫЛЬ</span>
+				<strong>0</strong>
+			</div>
+			<div class="profile-stat">
+				<span>ОТКРЫТО КЕЙСОВ</span>
+				<strong>0</strong>
+			</div>
+			<div class="profile-stat">
+				<span>ВСЕГО АПГРЕЙДОВ</span>
+				<strong>0</strong>
+			</div>
+		</section>
+
+		<section class="profile-links" aria-label="Разделы профиля">
+			<button class="profile-link-button" type="button">ШКАФ КОЛЛЕКЦИЙ</button>
+			<button class="profile-link-button" type="button">ГАЛЛЕРЕЯ</button>
+		</section>
+
+		<section class="inventory" aria-label="Инвентарь">
+			<div class="inventory-header" aria-hidden="true">
+				<img src="img/head_inventory.jpg" alt="">
+				<span>ИНВЕНТАРЬ</span>
+			</div>
+			<div class="inventory-grid">
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+				<div class="inventory-slot" data-inventory-slot></div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
